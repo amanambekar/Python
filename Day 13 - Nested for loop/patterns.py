@@ -121,6 +121,7 @@ for i in range(8):
           print("0",end=" ") 
     print()
 '''
+'''
 count=1
 for i in range(1,7):
     for j in range(1,6):
@@ -137,8 +138,61 @@ for i in range(1,7):
                 print(count,end=" ") 
                 count+=1
     print()
+'''
+'''
+for i in range(1,4):
+    for j in range(1,4):
+        if i==1 or i==3 or j==1 or j==3:
+           print("*",end=" ")
+        else:
+           print(" ",end=" ")
+    print()
+'''
 
+'''
+row=int(input("Enter row="))
+col=int(input("Enter col="))
+for i in range(1,row+1):
+    for j in range(1,col+1):
+        if i==1 or i==row or j==1 or j==col:
+           print("*",end=" ")
+        else:
+           print(" ",end=" ")
+    print()
+'''
 
+'''
+row=int(input("Enter row="))
+count=0
+for i in range(1,row+1):
+    for j in range(1,row+1):
+        if i%2==0:
+           print(count,end=" ")
+           count-=1
+        else:
+         count+=1
+         print(count,end=" ")
+    count+=row
+    print()
+'''
 
+row=int(input("Enter row=")) 
+a=0
+b=1
+for i in range(1,row+1):
+    for j in range(1,row+1):
+        if i==1 and j==1:
+           print(a,end=" ")
+        elif i==1 and j==2:
+           print(b,end=" ")
+        else:
+           c=a+b
+           print(c,end=" ")
+           a=b
+           b=c
+    print()
+            
+          
+       
 
 
